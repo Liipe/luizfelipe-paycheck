@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Impostos</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    
+    <fieldset id="campoTotal">
+        
+        <h1>Salary Paycheck Calculator</h1>
+        
+        <form class="form">
+            <label for="">
+                Salary:
+            <input id="salary" type="text" name="" placeholder="2000.0"/>
+            <input type="submit" name="Calc"/>
+            </label>
+        </form>
+        
+    <div class="inss">
+		<span class="inss">INSS:</span>
+		<span class="inssresult">0.00</span>
+	</div>
+		
+	<div class="irpf">	
+		<span class="irpf">IRPF:</span>
+		<span class="irpfresult">0.00</span>
+	</div>
+	
+	<div class=result>
+		<span class="salarioliq">Liquid Salary:</span>
+		<span class="salarioresult">0.00</span>
+	</div>
+        
+    </fieldset>
+    <script src = "//code.Jquery.com/jquery-1.11.3.min.js" ></script>
+    <script src="js/calculateController.js"></script>
+    <script src="js/calculateService.js"></script>
+    
+</body>
+
+</html>
